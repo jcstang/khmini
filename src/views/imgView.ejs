@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, inital-scale=1">
+	<title><%=title%></title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <!-- nav section -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> IMGS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-nav-demo">
+      <ul class="nav navbar-nav">
+        <%for(let i=0; i<2; i++) {%>
+          <li><a href="<%=nav[i].link%>"><%=nav[i].title%></a></li>
+        <%}%>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <%for(let i=2; i<4; i++) {%>
+          <li><a href="<%=nav[i].link%>"><%=nav[i].title%></a></li>
+        <%}%>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+  <div class="container">
+    <div class="bump"></div>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item"><a href="/imgs">Imgs</a></li>
+      <li class="breadcrumb-item active" aria-current="page">More</li>
+    </ol>
+  </nav>
+    <div class="row">
+      <div class="col-lg-4">
+      <div class="card" style="width: 40rem;">
+        <img class="card-img-top img-thumbnail" src="<%=myImg.link%>" alt="card imgage cap">
+      <div class="card-body">
+        <h5 class="card-title"><%=myImg.title%></h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="/imgs" class="btn btn-primary">Go back</a>
+      </div>
+      </div>
+      
+    </div>
+    </div>
+  </div>
+
+</body>
+</html>
