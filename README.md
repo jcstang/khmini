@@ -1,3 +1,3 @@
 # khmini
 
-## Website for khminiherfords.com
+## Website for khminiherefords.com
