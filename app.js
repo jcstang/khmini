@@ -25,7 +25,7 @@ const nav = [
 const listOfImgs = [
   { link: 'https://source.unsplash.com/JVeSvSfzWSE', title: 'Blah'},
   { link: 'https://source.unsplash.com/uywhcKtg5SQ', title: 'Blah'},
-  { link: 'https://source.unsplash.com/gUkGFLbN4us', title: 'Blah'},
+  { link: 'https://source.unsplash.com/JPvpWFvaDQ8', title: 'Blah'},
   { link: 'https://source.unsplash.com/g3qrH9Mm93k', title: 'Blah'},
   { link: 'https://source.unsplash.com/87oQ_cUO1Ns', title: 'Blah'},
   { link: 'https://source.unsplash.com/b13VqWj-gmU', title: 'Blah'},
@@ -45,7 +45,7 @@ app.get('/', (req, res) => {
     {
       nav,
       listOfImgs,
-      title: 'Image Gallery'
+      title: 'KH Miniture Herefords'
     }
   );
 });
