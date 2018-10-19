@@ -8,7 +8,7 @@ const imgRouter = express.Router();
 const listOfImages = [
   { link: 'https://source.unsplash.com/JVeSvSfzWSE', title: 'beach'},
   { link: 'https://source.unsplash.com/uywhcKtg5SQ', title: 'wet'},
-  { link: 'https://source.unsplash.com/gUkGFLbN4us', title: 'strike'},
+  { link: 'https://source.unsplash.com/jxDVfl1HzzA', title: 'moose'},
   { link: 'https://source.unsplash.com/g3qrH9Mm93k', title: 'green'},
   { link: 'https://source.unsplash.com/87oQ_cUO1Ns', title: 'fireworks'},
   { link: 'https://source.unsplash.com/b13VqWj-gmU', title: 'murica'},
@@ -32,7 +32,7 @@ function router(nav) {
         let client;
         try {
           client = await MongoClient.connect(url);
-          debug('Connected correctly to server');
+          debug('Connected correctly to server mlab-mongodb server');
 
           const db = client.db(dbName);
           const col = await db.collection('imgsmore');
@@ -63,7 +63,7 @@ function router(nav) {
         let client;
         try {
           client = await MongoClient.connect(url);
-          debug('connected correctly to server');
+          debug('connected correctly to server mlab-mongodb server');
           const db = client.db(dbName);
           const col = await db.collection('imgsmore');
 
@@ -73,7 +73,8 @@ function router(nav) {
             'imgView',
             {
               nav,
-              title: 'Single Image',
+              title: myImg.title,
+
               myImg
             }
           );
