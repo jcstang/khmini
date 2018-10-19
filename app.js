@@ -34,7 +34,7 @@ const listOfImgs = [
   { link: 'https://source.unsplash.com/rQ9QfnEEmrQ', title: 'Blah'}
 ];
 
-// instead of node modules, it goes to spec path
+// instead of node modules, it goes to spec path.
 const imgRouter = require('./src/routes/imgRoutes')(nav);
 
 app.use('/imgs', imgRouter);
