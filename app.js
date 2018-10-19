@@ -49,4 +49,4 @@ app.get('/', (req, res) => {
 });
 app.listen(port, () => {
   debug(`listening on port ${chalk.green(port)}`);
-})
+});
