@@ -74,7 +74,6 @@ function router(nav) {
             {
               nav,
               title: myImg.title,
-
               myImg
             }
           );
