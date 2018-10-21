@@ -15,7 +15,7 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 const nav = [
-  { link: '#', title: 'About' },
+  { link: '/about', title: 'About' },
   { link: '#', title: 'Contact' },
   { link: '#', title: 'Sign Up' },
   { link: '#', title: 'Login' }
@@ -34,8 +34,10 @@ const listOfImgs = [
 
 // instead of node modules, it goes to spec path.
 const imgRouter = require('./src/routes/imgRoutes')(nav);
+const aboutRouter = require('./src/routes/aboutRoutes')(nav);
 
 app.use('/imgs', imgRouter);
+app.use('/about', aboutRouter);
 
 app.get('/', (req, res) => {
   res.render(
