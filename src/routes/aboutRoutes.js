@@ -1,6 +1,5 @@
 const express = require('express');
 const debug = require('debug')('app:aboutRoutes');
-//const { MongoClient, ObjectID } = require('mongodb');
 const bodyParser = require("body-parser");
 
 const aboutRouter = express.Router();
