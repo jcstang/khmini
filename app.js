@@ -32,7 +32,7 @@ const listOfImgs = [
   { link: 'https://source.unsplash.com/rQ9QfnEEmrQ', title: 'Img9'}
 ];
 
-// instead of node modules, it goes to spec path.
+// instead of node modules, it goes to a specific path.
 const imgRouter = require('./src/routes/imgRoutes')(nav);
 const aboutRouter = require('./src/routes/aboutRoutes')(nav);
 
