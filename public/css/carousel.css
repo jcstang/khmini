@@ -26,6 +26,11 @@ body {
   .carousel-inner img {
     object-fit: cover;
   }
+
+  .rounded-circle {
+    max-width: 80%;
+    height: auto;
+  }
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
