@@ -21,6 +21,11 @@ body {
     bottom: 3rem;
     z-index: 10;
   }
+
+  /* customize img size */
+  .carousel-inner img {
+    object-fit: cover;
+  }
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
