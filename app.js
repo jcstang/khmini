@@ -17,6 +17,7 @@ app.set('view engine', 'ejs');
 const nav = [
   { link: '/about', title: 'About' },
   { link: '#', title: 'Contact' },
+  { link: '#', title: 'Images' },
   { link: '#', title: 'Sign Up' },
   { link: '#', title: 'Login' }
 ];
