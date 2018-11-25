@@ -9,7 +9,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": " node app.js npm run build-css",
+    "start": "DEBUG=app,app:* node app.js npm run build-css",
     "dev-start": " DEBUG=app,app:* nodemon app.js npm run build-css",
     "build-css": "node-sass --include-path sass public/css/input.scss public/css/style.css"
   },
