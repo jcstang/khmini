@@ -19,6 +19,7 @@ body {
   background-size: cover;
 }
 
+/* shadow for jumbo-text */
 .jumbo-text h1, .jumbo-text h2 {
   color: white;
   text-shadow: 4px 4px 8px #000000;
