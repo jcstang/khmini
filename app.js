@@ -46,7 +46,7 @@ app.get('/', (req, res) => {
     {
       nav,
       listOfImgs,
-      title: 'KH Miniature Herefords'
+      title: 'K&H Miniature Herefords'
     }
   );
 });
