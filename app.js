@@ -45,8 +45,6 @@ app.get('/', (req, res) => {
   res.render(
     'index',
     {
-      nav,
-      listOfImgs,
       title: 'K&H Miniature Herefords'
     }
   );
