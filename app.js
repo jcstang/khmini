@@ -15,8 +15,6 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 // instead of node modules, it goes to a specific path.
-//const imgRouter = require('./src/routes/imgRoutes')(nav);
-const imgRouter = require('./src/routes/imgRoutes');
 //const aboutRouter = require('./src/routes/aboutRoutes')(nav);
 const aboutRouter = require('./src/routes/aboutRoutes');
 
