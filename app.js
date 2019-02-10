@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
+// Navigation items
 const nav = [
   { link: '/about', title: 'About' },
   { link: '#', title: 'Contact' },
