@@ -71,3 +71,9 @@ typings/
 
 # Serverless directories
 .serverless
+
+# Ignore imgs
+*.jpg 
+*.jpeg 
+*.png 
+*.gif
