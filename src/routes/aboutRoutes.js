@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 
 const aboutRouter = express.Router();
 
-function router(nav) {
+function router() {
   aboutRouter.route('/')
     .get((req, res) => {
       res.render(
