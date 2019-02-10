@@ -15,24 +15,24 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 // Navigation items
-const nav = [
-  { link: '/about', title: 'About' },
-  { link: '#', title: 'Contact' },
-  { link: '#', title: 'Images' },
-  { link: '#', title: 'Sign Up' },
-  { link: '#', title: 'Login' }
-];
-const listOfImgs = [
-  { link: 'https://source.unsplash.com/JVeSvSfzWSE', title: 'Img1'},
-  { link: 'https://source.unsplash.com/uywhcKtg5SQ', title: 'Img2'},
-  { link: 'https://source.unsplash.com/JPvpWFvaDQ8', title: 'Img3'},
-  { link: 'https://source.unsplash.com/g3qrH9Mm93k', title: 'Img4'},
-  { link: 'https://source.unsplash.com/87oQ_cUO1Ns', title: 'Img5'},
-  { link: 'https://source.unsplash.com/b13VqWj-gmU', title: 'Img6'},
-  { link: 'https://source.unsplash.com/va-wXGiYUao', title: 'Img7'},
-  { link: 'https://source.unsplash.com/sai-x7brics', title: 'Img8'},
-  { link: 'https://source.unsplash.com/rQ9QfnEEmrQ', title: 'Img9'}
-];
+// const nav = [
+//   { link: '/about', title: 'About' },
+//   { link: '#', title: 'Contact' },
+//   { link: '#', title: 'Images' },
+//   { link: '#', title: 'Sign Up' },
+//   { link: '#', title: 'Login' }
+// ];
+// const listOfImgs = [
+//   { link: 'https://source.unsplash.com/JVeSvSfzWSE', title: 'Img1'},
+//   { link: 'https://source.unsplash.com/uywhcKtg5SQ', title: 'Img2'},
+//   { link: 'https://source.unsplash.com/JPvpWFvaDQ8', title: 'Img3'},
+//   { link: 'https://source.unsplash.com/g3qrH9Mm93k', title: 'Img4'},
+//   { link: 'https://source.unsplash.com/87oQ_cUO1Ns', title: 'Img5'},
+//   { link: 'https://source.unsplash.com/b13VqWj-gmU', title: 'Img6'},
+//   { link: 'https://source.unsplash.com/va-wXGiYUao', title: 'Img7'},
+//   { link: 'https://source.unsplash.com/sai-x7brics', title: 'Img8'},
+//   { link: 'https://source.unsplash.com/rQ9QfnEEmrQ', title: 'Img9'}
+// ];
 
 // instead of node modules, it goes to a specific path.
 const imgRouter = require('./src/routes/imgRoutes')(nav);
